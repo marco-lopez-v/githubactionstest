@@ -6,7 +6,7 @@ on:
     pull_request:
     types: [opened,edited]
 jobs:
-  giphy-generator
+  giphy-generator:
     runs-on: ubuntu-latest
     
     steps:
