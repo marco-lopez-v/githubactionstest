@@ -48,9 +48,7 @@ jobs:
         run: dotnet restore
 
       - name: .Net Core - Add Nunit console runner nuget package
-        run: dotnet add UnitTest.Net48Console.csproj package NUnit.Console
-        
-      # run: dotnet add package NUnit.ConsoleRunner
+        run: dotnet add ./UnitTest.Net48Console/UnitTest.Net48Console.csproj package NUnit.Console
       
       #########################################
       # Solution Build
