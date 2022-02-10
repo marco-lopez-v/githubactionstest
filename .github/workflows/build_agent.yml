@@ -46,6 +46,11 @@ jobs:
       # Restore Nugets and dependencies
       - name: .Net Core - Restore nuget and dependencies
         run: dotnet restore
+
+      - name: .Net Core - Add Nunit console runner nuget package
+        run: dotnet add UnitTest.Net48Console.csproj package NUnit.Console
+        
+      # run: dotnet add package NUnit.ConsoleRunner
       
       #########################################
       # Solution Build
@@ -57,5 +62,8 @@ jobs:
       #########################################
       # Unit Tests
       #########################################
+      - name: .Net Fx Unit Test
+        run: nunit3-console UnitTest.Net48Console.dll
+        
       - name: .Net Core Unit Test
         run: dotnet test --no-build --verbosity normal
