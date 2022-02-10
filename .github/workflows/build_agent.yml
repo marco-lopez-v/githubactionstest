@@ -6,6 +6,11 @@ name: Test CI agent
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Build configuration'
+        required: true
+        default: 'debug'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -62,7 +67,7 @@ jobs:
       ##################################################
       # Build Solution
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build --configuration ${{ github.event.inputs.environment }} --no-restore
 
       ##################################################
       # .Net Fx Unit Tests
