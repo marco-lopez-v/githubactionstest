@@ -32,7 +32,7 @@ jobs:
         
       # Restore Nuget Packages
       - name: Net Fx - Restore nuget packages
-        uses: nuget restore GithubActionsTests.sln
+        run: nuget restore GithubActionsTests.sln
 
       #########################################
       # Net Core Setups
