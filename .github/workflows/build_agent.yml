@@ -68,7 +68,7 @@ jobs:
       # .Net Fx Unit Tests
       ##################################################
       - name: .Net Fx Unit Tests
-        run: ./NUnit.ConsoleRunner.3.13.0/tools/nunit3-console.exe  ./UnitTest.Net48Console/bin/debug/UnitTest.Net48Console.dll.dll
+        run: ./NUnit.ConsoleRunner.3.13.0/tools/nunit3-console.exe  ./UnitTest.Net48Console/bin/debug/UnitTest.Net48Console.dll
 
       ##################################################
       # .Net Core Unit Tests
