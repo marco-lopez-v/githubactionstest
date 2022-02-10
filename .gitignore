@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UnitTest.NetCoreConsole/bin
+/UnitTest.NetCoreConsole/obj
+/UnitTest.Net48Console/bin
+/UnitTest.Net48Console/obj
+/packages
+/NetCoreConsole/bin
+/NetCoreConsole/obj
+/Net48Console/obj
+/Net48Console/bin
+/.vs/GithubActionsTests
