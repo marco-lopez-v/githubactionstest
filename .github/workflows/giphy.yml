@@ -17,4 +17,4 @@ jobs:
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
         with:
           rating: 'g'
-          lang: 'en'
+          lang: 'es'
