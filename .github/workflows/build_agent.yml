@@ -79,4 +79,4 @@ jobs:
       # .Net Core Unit Tests
       ##################################################
       - name: .Net Core Unit Tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test --configuration ${{ github.event.inputs.environment }} --no-build --verbosity normal
